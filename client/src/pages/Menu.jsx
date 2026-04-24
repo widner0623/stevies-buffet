@@ -60,8 +60,8 @@ function Menu() {
     0
   );
 
-  const tax = subtotal * 0.06;
-  const total = subtotal + tax;
+  const tax = cartSubtotal * 0.06;
+  const total = cartSubtotal + tax;
 
   return (
     <section className="menu-page">
