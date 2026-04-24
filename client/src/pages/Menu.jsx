@@ -60,6 +60,9 @@ function Menu() {
     0
   );
 
+  const tax = subtotal * 0.06;
+  const total = subtotal + tax;
+
   return (
     <section className="menu-page">
      <div className="menu-hero">
@@ -148,7 +151,7 @@ function Menu() {
         <div className="menu-order-box">
           <p>
             {cartCount} item{cartCount !== 1 ? "s" : ""} in cart •{" "}
-            <strong>${cartSubtotal.toFixed(2)}</strong>
+            <strong>${total.toFixed(2)}</strong>
           </p>
 
           <Link to="/cart" className="view-cart-btn">
